@@ -1,0 +1,12 @@
+logging:
+    level:
+        edu.umich: INFO
+        org.springframework.security: INFO
+    file: hwf-survey-functional-tests.log
+
+survey:
+    site:
+        url: http://localhost:8080/hwf-survey
+
+browser:
+    vendor: firefox
