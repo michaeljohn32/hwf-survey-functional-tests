@@ -32,7 +32,8 @@ public class LookAndFeelTests {
     public void givenLandingOnSurveyPage_shouldSeeGreetingMessage() throws Exception {
         System.out.println("testing against " + url);
         browser.get(url);
-        SurveyPage.init(browser)
+        SurveyPage
+                .init(browser)
                 .validateView();
     }
 }

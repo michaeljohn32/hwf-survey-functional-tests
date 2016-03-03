@@ -30,6 +30,28 @@ public class SurveyPage {
         return page;
     }
 
+/*
+Would you attend Hacks with Friends next year?
+Yes
+No
+
+How would you rate your overall experience at Hacks with Friends?
+Extremely Low
+Low
+Average
+Above Average
+Extremely High
+
+Did you learn something that could be useful at your present job?
+Yes
+No
+
+What could we do to improve Hacks with Friends next year?
+TEST BOX
+
+Other feedback or comments?
+TEXT BOX
+ */
     public SurveyPage validateView() {
         assertThat(browser).isNotNull();
         assertThat(greetingsMessageField).isNotNull();

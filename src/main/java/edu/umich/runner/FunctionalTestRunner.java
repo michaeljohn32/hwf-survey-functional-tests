@@ -57,6 +57,14 @@ public class FunctionalTestRunner {
 
     private void runMethod(Method method, Object classInstance) throws Exception {
         System.out.println("invoking " + method.getName());
-        method.invoke(classInstance);
+        try {
+            method.invoke(classInstance);
+        } catch (Exception e) {
+            Result result = new Result();
+            result.setClassName(classInstance.getClass().getName());
+            result.setName(method.getName());
+            result.setFailure(e.getCause().getMessage());
+            TestResultReporter.getInstance().addResults(result);
+        }
     }
 }
