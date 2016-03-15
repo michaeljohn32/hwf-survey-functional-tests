@@ -54,7 +54,7 @@ TEXT BOX
  */
     public SurveyPage validateView() {
         assertThat(browser).isNotNull();
-        assertThat(browser.getTitle().contains("HWF Survey"));
+        assertThat(browser.getTitle().contains("HWF Survey1"));
 //        assertThat(greetingsMessageField).isNotNull();
 //        assertThat(greetingsMessageField.getText()).isNotNull();
 //        assertThat(greetingsMessageField.getText()).isEqualTo("HWF Survey");
