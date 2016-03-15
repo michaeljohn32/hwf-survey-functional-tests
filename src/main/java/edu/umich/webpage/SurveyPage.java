@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 @Data
 public class SurveyPage {
 
-    @FindBy(tagName = "h3")
+//    @FindBy(tagName = "h3")
     private WebElement greetingsMessageField;
 
     private WebDriver browser;
@@ -54,7 +54,7 @@ TEXT BOX
  */
     public SurveyPage validateView() {
         assertThat(browser).isNotNull();
-        assertThat(getTitle().contains("HWF Survey"));
+        assertThat(browser.getTitle().contains("HWF Survey"));
 //        assertThat(greetingsMessageField).isNotNull();
 //        assertThat(greetingsMessageField.getText()).isNotNull();
 //        assertThat(greetingsMessageField.getText()).isEqualTo("HWF Survey");
