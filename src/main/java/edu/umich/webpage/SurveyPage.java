@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 @Data
 public class SurveyPage {
 
-    @FindBy(tagName = "title")
+    @FindBy(name = "title")
     private WebElement greetingsMessageField;
 
     private WebDriver browser;
@@ -56,7 +56,7 @@ TEXT BOX
         assertThat(browser).isNotNull();
         assertThat(greetingsMessageField).isNotNull();
         assertThat(greetingsMessageField.getText()).isNotNull();
-        assertThat(greetingsMessageField.getText()).isEqualTo("Navigation");
+        assertThat(greetingsMessageField.getText()).isEqualTo("HWF Survey");
 //        assertThat(greetingsMessageField.getText()).isEqualTo("NavigationHello HWF Survey!!!!!!");
         return this;
     }
