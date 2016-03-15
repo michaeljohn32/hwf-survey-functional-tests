@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 @Data
 public class SurveyPage {
 
-    @FindBy(tagName = "h3")
+    @FindBy(tagName = "title")
     private WebElement greetingsMessageField;
 
     private WebDriver browser;
